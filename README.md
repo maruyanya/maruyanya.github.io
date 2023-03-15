@@ -4,4 +4,4 @@
 
 
 # URL
-https://maruyanya.github.io
+https://maruyanya.github.io/index.html
