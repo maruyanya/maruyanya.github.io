@@ -207,10 +207,10 @@ img {
       padding-bottom: 80px;
     }
     .hero-title{
-      width: 66vw;
+      width: 80vw;
       height: auto;
       top: 4vh;
-      left: 30vw;
+      left: 16vw;
     }
   }
 
@@ -313,9 +313,8 @@ img {
 /*************************
 *    about
 *************************/
-.main-area{
-  width: 68%;
-  padding: 80px 40px;
+.main-2{
+  top: 160px;
 }
 
 h6{
@@ -356,10 +355,12 @@ h6{
 
 .about-column{
   margin: 38px 0 140px 0;
+  line-height: 1.8;
 }
 
 .about-column-text{
   margin-top: 24px;
+  line-height: 1.8;
 }
 
 .about-column-img{
@@ -372,32 +373,34 @@ h6{
 *************************/
 .image-anime{
   position: relative;
+  overflow: hidden;
   width: 410px;
-  height: auto;
+  height: 350px;
+  background-color: var(--yellow);
 }
 
-.image-anime-parts{
+.image-anime img{
+  display: block;
   position: absolute;
-  width: 100%;
-  height: auto;
+  width: inherit;
+  height: inherit;
   opacity: 0;
-  animation: change-img-anim 10s infinite;
+  animation: slideAnime 8s ease infinite;
 }
 
-.image-anime-parts:nth-of-type(1){
+.image-anime img:nth-of-type(1){
   animation-delay: 0s;
 }
-.image-anime-parts:nth-of-type(2){
-  animation-delay: 5s;
+.image-anime img:nth-of-type(2){
+  animation-delay: 4s;
 }
-@keyframes change-img-anim{
+@keyframes slideAnime{
   0%{ opacity: 0;}
-  15%{ opacity: 1;}
-	25%{ opacity: 1;}
-  75%{ opacity: 0;}
+  6%{ opacity: 1;}
+	50%{ opacity: 1;}
+  56%{ opacity: 0;}
 	100%{ opacity: 0;}
 }
-/*************************/
 
 .skillset-text{
   width: 224px;
@@ -406,6 +409,9 @@ h6{
 .skillset-text h5{
   font-size: 20px;
   line-height: 1.2;
+}
+.skillset-text p{
+  line-height: 1.4;
 }
 .skillset-list{
   display: flex;
@@ -429,22 +435,21 @@ h6{
 
 /* 幅が1300px以下 */
 @media (max-width:1300px){
-  .main-area{
-    width: 100%;
+  .about-column-text{
+    padding: 0;
   }
 }
 
+ /* 幅が949px以下 */
+ @media (max-width:949px){
+ }
+
 /* 幅が477px以下 */
 @media (max-width:477px){
-  .prof-img-sp{
-    text-align: center;
-  }
   .image-anime {
-    width: 90%;
-    height: auto;
-  }
-  .main-area {
-    width: 90%;
+    width: 328px;
+    height: 280px;
+    margin: auto;
   }
   .about-column-img{
     width: 90%;
