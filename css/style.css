@@ -483,11 +483,54 @@ h6{
 }
 
 /* チェックボックスの初期設定 */
-#popup-on{
+#popup-on-1{
   display: none;
 }
+#popup-on-2{
+  display: none;
+}
+#popup-on-3{
+  display: none;
+}
+#popup-on-4{
+  display: none;
+}
+#popup-on-5{
+  display: none;
+}
+#popup-on-6{
+  display: none;
+}
+#popup-on-7{
+  display: none;
+}
+#popup-on-8{
+  display: none;
+}
+
 /* チェックされたらポップアップウインドウを開く */
-#popup-on:checked + .popup{
+#popup-on-1:checked + .popup{
+  display: block;
+}
+#popup-on-2:checked + .popup{
+  display: block;
+}
+#popup-on-3:checked + .popup{
+  display: block;
+}
+#popup-on-4:checked + .popup{
+  display: block;
+}
+#popup-on-5:checked + .popup{
+  display: block;
+}
+#popup-on-6:checked + .popup{
+  display: block;
+}
+#popup-on-7:checked + .popup{
+  display: block;
+}
+#popup-on-8:checked + .popup{
   display: block;
 }
 
@@ -567,19 +610,31 @@ h6{
 }
 
 .garally-staff-container{
-  margin: 24px 0;
+  color: #707070;
+  margin: 40px 0;
 }
 
 .garally-staff-list{
   display: flex;
 }
 .staff-title{
-  padding: 4px 0;
+  padding: 2px 0;
   margin: 0 16px 0 0;
   text-align: left;
 }
 .staff-detail{
-  padding: 4px 0;
+  padding: 2px 0;
+}
+.pop-inner-img{
+  gap: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.link-text{
+  color: rgb(44, 115, 214);
+  font-weight: bold;
 }
 
 /*************************
