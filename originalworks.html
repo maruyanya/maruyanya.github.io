@@ -27,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="wrap">
     <header>
         <section class="header lower_header">
             <div class="header-container">
@@ -57,12 +57,12 @@
 
         <div  class="main-container">
             <section class="category-container">
-                <h4>ORIGINAL WORKS</h4>
-                <p class="h4-sub">自主制作</p>
+                <h4 class="fade">ORIGINAL WORKS</h4>
+                <p class="h4-sub fade">自主制作</p>
 
-                <div class="pop-container">
+                    <div class="pop-container">
                     <!-- 5 -->
-                    <div class="pop-box">
+                    <div class="pop-box fade" id="ow-1">
                         <div class="pop-img">
                             <label for="popup-on-5"><label for="popup-on-5"><div class="x-open"><img src="images/14_dinogasuki_1.jpg" alt="dinogasuki" class="layer-img" width="250" height="auto"></div></label>
                         </div>
@@ -74,10 +74,13 @@
                             <section class="popup-inner">
                                 <h5>恐竜の子ども服｜dinogasuki</h5>
                                 <img src="images/14_dinogasuki_1.jpg" alt="dinogasuki" class="layer-img">
-                                <p>恐竜が好きだった娘に着てもらおうと、SUZURIを利用して恐竜イラストの子ども服を制作していました。instagramもやっていたので、コンセプトとリンク先をまとめたLPをSTUDIOで作成しました。</p>
+                                <p>恐竜が好きだった娘に着てもらおうと、SUZURIを利用して恐竜イラストの子ども服を一時期制作していました。instagramもやっていたので、コンセプトとリンク先をまとめたLPをSTUDIOで作成しました。</p>
                                 <img src="images/14_dinogasuki_2.jpg" alt="dinogasuki" class="layer-img">
+                                <p>スマホにも対応するレスポンシブデザインで制作。</p>
                                 <img src="images/dinogasuki.jpg" alt="dinogasuki" class="layer-img">
+                                <p>ロゴも制作。dinogasukiの目標は、男の子・女の子といった垣根を越えて、恐竜好きな子が人の目を気にせず着られる恐竜アイテムを作ることでした。そのためグラデーションカラーの恐竜をロゴマークにしました。</p>
                                 <img src="images/dinogasuki_2.jpg" alt="dinogasuki" class="layer-img">
+                                <p>制作時のイメージに合わせてinstagram投稿用に毎回画像を作成していました。</p>
                                 <div class="garally-staff-container">
                                     <dl class="garally-staff-list">
                                         <dt class="staff-title">制作</dt>
@@ -93,9 +96,8 @@
                     <!-- ./5 -->
 
                     <!-- 1 -->
-                    <div class="pop-box">
-                        <div class="pop-img">
-                            <label for="popup-on-1"><label for="popup-on-1"><div class="x-open"><img src="images/1_jam_mok2.jpg" alt="ラベルデザイン" class="layer-img" width="250" height="auto"></div></label>
+                    <div class="pop-box fade" id="ow-2">
+                        <div class="pop-img" ><label for="popup-on-1"><label for="popup-on-1"><div class="x-open"><img src="images/1_jam_mok2.jpg" alt="ラベルデザイン" class="layer-img" width="250" height="auto"></div></label>
                         </div>
                         <input type="checkbox" id="popup-on-1">
                         <div class="popup">
@@ -121,7 +123,7 @@
                     <!-- ./1 -->
 
                      <!-- 2 -->
-                    <div class="pop-box">
+                    <div class="pop-box fade" id="ow-3">
                         <div class="pop-img">
                             <label for="popup-on-2"><label for="popup-on-2"><div class="x-open"><img src="images/12_beer.jpg" alt="ビール瓶" class="layer-img" width="250" height="auto"></div></label>
                         </div>
@@ -143,7 +145,7 @@
                     <!-- ./2 -->
 
                     <!-- 3 -->
-                    <div class="pop-box">
+                    <div class="pop-box fade" id="ow-4">
                         <div class="pop-img">
                             <label for="popup-on-3"><label for="popup-on-3"><div class="x-open"><img src="images/13_poster.jpg" alt="ポスター" class="layer-img" width="250" height="auto"></div></label>
                         </div>
@@ -165,9 +167,8 @@
                     <!-- ./3 -->
 
                     <!-- 4 -->
-                    <div class="pop-box">
-                        <div class="pop-img">
-                            <label for="popup-on-4"><label for="popup-on-4"><div class="x-open"><img src="images/2_book.jpg" alt="本" class="layer-img" width="250" height="auto"></div></label>
+                    <div class="pop-box fade">
+                            <label><label for="popup-on-4"><div class="x-open"><img src="images/2_book.jpg" alt="本" class="layer-img" width="250" height="auto"></div></label>
                         </div>
                         <input type="checkbox" id="popup-on-4">
                         <div class="popup">
@@ -198,5 +199,21 @@
         </div>
     </div>
 </main>
+<!-- スクロールでふわっと表示 -->
+<script type="text/javascript">
+    const targets = document.getElementsByClassName('fade');
+    for(let i = targets.length; i--;){
+     let observer = new IntersectionObserver((entries, observer) => {
+      for(let j = entries.length; j--;){
+       if (entries[j].isIntersecting) {
+        entries[j].target.classList.add('active');
+       } else{
+        entries[j].target.classList.remove('active');
+       }
+      }
+     });
+     observer.observe(targets[i]);
+    }
+    </script>
 </body>
 </html>

@@ -27,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="wrap">
     <header>
         <section class="header lower_header">
             <div class="header-container">
@@ -57,12 +57,12 @@
 
         <div  class="main-container">
             <section class="category-container">
-                <h4>WORKS</h4>
-                <p class="h4-sub">実績</p>
+                <h4 class="fade">WORKS</h4>
+                <p class="h4-sub fade">実績</p>
 
                 <div class="pop-container">
                     <!-- 1 -->
-                    <div class="pop-box">
+                    <div class="pop-box fade" id="work-1">
                         <div class="pop-img">
                             <label for="popup-on-1"><label for="popup-on-1"><div class="x-open"><img src="images/9_waraz.jpg" alt="イラストエッセイ" class="layer-img" width="250" height="auto"></div></label>
                         </div>
@@ -104,7 +104,7 @@
                     <!-- ./1 -->
 
                      <!-- 2 -->
-                    <div class="pop-box">
+                    <div class="pop-box fade" id="work-2">
                         <div class="pop-img">
                             <label for="popup-on-2"><label for="popup-on-2"><div class="x-open"><img src="images/inatumugi.jpg" alt="イラストエッセイ" class="layer-img" width="250" height="auto"></div></label>
                         </div>
@@ -116,8 +116,8 @@
                             <section class="popup-inner">
                                 <h5>Webサイト•販促物制作 | 久保田織染工業株式会社様</h5>
                                 <img src="images/4_inatumugi_1.jpg" alt="Webサイト" class="layer-img">
-                                <p>国指定伝統工芸品である伊那紬を製造販売する、老舗織物会社のWebサイトを制作しました。ヒアリング、取材、撮影ディレクション、画像編集、サイトデザイン、コーディング、アクセス解析まですべて担当しています。2020年7月に初公開してから現在まで、サイトの保守管理、SNS運用、内容やデザインの修正を継続的に行ない、より良い内容になるよう日々努めています。クライアントが希望するワードは、公開半年後から現在までGoogle検索で1位をキープし続けています。定期的にお問い合わせが来るようになり、サイトを見て訪問するお客様が増えた、とクライアントからは嬉しいお知らせを度々いただいています。</p>
-                                <p>デザイン・ディレクション・コーディング・保守管理・SNS運用を現在も担当しています。</p>
+                                <p>国指定伝統工芸品である伊那紬を製造販売する、老舗織物会社のWebサイトを制作しました。2020年7月に初公開してから現在まで、サイトの保守管理、SNS運用、内容やデザインの修正を継続的に行ない、より良い内容になるよう日々努めています。クライアントが希望するワードは、公開半年後から現在までGoogle検索で1位をキープし続けています。定期的にお問い合わせが来るようになり、サイトを見て訪問するお客様が増えた、とクライアントからは嬉しいお知らせを度々いただいています。</p>
+                                <p>ヒアリング、取材、撮影ディレクション、画像編集、サイトデザイン、コーディング、アクセス解、保守管理、SNS運用を現在も担当しています。</p>
                                 <div class="garally-staff-container">
                                     <dl class="garally-staff-list">
                                         <dt class="staff-title">制作</dt>
@@ -129,7 +129,7 @@
                                     </dl>
                                 </div>
                                     <img src="images/4_inatumugi_2.jpg" alt="TOP-sp1">
-                                <p>スマホでの閲覧が訳半数のため、タブレットでの閲覧時にも見やすいようにリキッドレイアウトを用いています。</p>
+                                <p>スマホでの閲覧が約半数のため、タブレットでの閲覧時にも見やすいようにリキッドレイアウトを用いています。</p>
                                 <img src="images/4_inatumugi_6.jpg" alt="雷鳥ぶろーち">
                                 <p>小物にパッケージを付けて売りたいとご相談頂き、台紙と販促ポップを作成。地域で活動が盛んな雷鳥の保護活動をサポートする目的で作られた商品でしたので、クライアントと相談の上それを前面に押し出した販促ポップにしました。発売から1年、定期的に売れ続けており、ポップを見て買ったとの声を時々いただいています。</p>
                                 <p>デザイン・アートディレクション・モデルを担当しました。</p>
@@ -156,8 +156,8 @@
                     <!-- ./2 -->
 
                     <!-- 3 -->
-                    <div class="pop-box">
-                        <div class="pop-img">
+                    <div class="pop-box fade">
+                        <div class="pop-img" id="work-3">
                             <label for="popup-on-3"><label for="popup-on-3"><div class="x-open"><img src="images/10_photospot.jpg" alt="成人式フォトスポット" class="layer-img" width="250" height="auto"></div></label>
                         </div>
                         <input type="checkbox" id="popup-on-3">
@@ -171,7 +171,7 @@
                                 <p>長野県伊那市の西箕輪公民館で開催された成人式『伊那市 二十歳のつどい』で使用されたフォトスポットを制作しました。テーマは「自然からの祝福」。豊かな自然と水芭蕉、農場のいちご…と西箕輪という地域から連想されるものを絵に表し、それに幸運の象徴となるような白い鳥を飛ばして、成人してこの地から飛び立つ若者を祝福するイメージです。</p>
                                 <p>イラスト・デザイン・アートディレクションを担当しました。</p>
                                 <img src="images/10_photospot_2.jpg" alt="成人式フォトスポット" class="layer-img">
-                                <p>設置当日は立ち会いができなかったため、納品時に取り扱い説明書を作成してお渡ししました。設置方法や、保管方法が記載されています。</p>
+                                <p>設置当日は立ち会いができなかったため、納品時に取り扱い説明書を作成してお渡ししました。設置方法や、素材を劣化させないための保管方法が記載されています。</p>
                                 <div class="garally-staff-container">
                                     <dl class="garally-staff-list">
                                         <dt class="staff-title">制作</dt>
@@ -187,7 +187,7 @@
                     <!-- ./3 -->
 
                     <!-- 4 -->
-                    <div class="pop-box">
+                    <div class="pop-box fade" id="work-4">
                         <div class="pop-img">
                             <label for="popup-on-4"><label for="popup-on-4"><div class="x-open"><img src="images/7_doukanyama.jpg" alt="メインビジュアル" class="layer-img" width="250" height="auto"></div></label>
                         </div>
@@ -216,7 +216,7 @@
                     <!-- ./4 -->
 
                     <!-- 5 -->
-                    <div class="pop-box">
+                    <div class="pop-box fade" id="work-5">
                         <div class="pop-img">
                             <label for="popup-on-5"><label for="popup-on-5"><div class="x-open"><img src="images/5_jyoshi.jpg" alt="上司本" class="layer-img" width="250" height="auto"></div></label>
                         </div>
@@ -245,7 +245,7 @@
                     <!-- ./5 -->
 
                     <!-- 6 -->
-                    <div class="pop-box">
+                    <div class="pop-box fade"  id="work-6">
                         <div class="pop-img">
                             <label for="popup-on-6"><label for="popup-on-6"><div class="x-open"><img src="images/11_maps.jpg" alt="地図" class="layer-img" width="250" height="auto"></div></label>
                         </div>
@@ -267,7 +267,7 @@
                                 <img src="images/11_postar.jpg" alt="店内ポスター" class="layer-img">
                                 <p>抽選会チラシ<br>ご契約者様限定の抽選会の店内掲示ポスターを制作しました。社内のルールとして、誰でも修正できるようにテキストをアウトライン化して加工することがほぼ無いのですが、データを工夫して修正しやすくしてあります。この方法が受け入れられたので、その後も楽しい雰囲気のデザインを指示された際には同じようにテキストで遊ぶようになりました。</p>
                                 <img src="images/11_youtube.jpg" alt="YoutubeCM" class="layer-img">
-                                <p>Youtube CM<br><a href="about.html" id="cm" class="link-text">ABOUTページの「デザイナーとしての業務経験」</a>で書いたように、提案から関われた数少ない案件です。アメコミイラストは手描き感があるほうがいいと先輩からアドバイスいただき、ラフさを残した作りになっています。社内の誰でも編集できるように、Premier ProではなくPower Pointのアニメーションとスライドを利用してパーツの動く紙芝居形式の動画に仕上げました。</p>
+                                <p>Youtube CM<br><a href="about.html#cm" class="link-text">ABOUTページの「デザイナーとしての業務経験」</a>で書いたように、提案から関われた数少ない案件です。アメコミイラストは手描き感があるほうがいいと先輩からアドバイスいただき、ラフさを残した作りになっています。社内の誰でも編集できるように、Premier ProではなくPower Pointのアニメーションとスライドを利用してパーツの動く紙芝居形式の動画に仕上げました。</p>
                             </section>
                             <!-- ./ポップアップの中身　ここまで -->
                           </div>
@@ -277,7 +277,7 @@
                     <!-- ./6 -->
 
                     <!-- 7 -->
-                    <div class="pop-box">
+                    <div class="pop-box fade" id="work-7">
                         <div class="pop-img">
                             <label for="popup-on-7"><label for="popup-on-7"><div class="x-open"><img src="images/6_chikonoya.jpg" alt="ロゴ" class="layer-img" width="250" height="auto"></div></label>
                         </div>
@@ -308,7 +308,7 @@
                     <!-- ./7 -->
 
                      <!-- 8 -->
-                     <div class="pop-box">
+                     <div class="pop-box fade" id="work-8">
                         <div class="pop-img">
                             <label for="popup-on-8"><label for="popup-on-8"><div class="x-open"><img src="images/8_Kanca.jpg" alt="キャラクターデザイン" class="layer-img" width="250" height="auto"></div></label>
                         </div>
@@ -337,8 +337,6 @@
                         </div>
                     </div>
                     <!-- ./8 -->
-                    
-
                 </div>
             </section>
             <footer>
@@ -352,5 +350,21 @@
         </div>
     </div>
 </main>
+<!-- スクロールでふわっと表示 -->
+<script type="text/javascript">
+    const targets = document.getElementsByClassName('fade');
+    for(let i = targets.length; i--;){
+     let observer = new IntersectionObserver((entries, observer) => {
+      for(let j = entries.length; j--;){
+       if (entries[j].isIntersecting) {
+        entries[j].target.classList.add('active');
+       } else{
+        entries[j].target.classList.remove('active');
+       }
+      }
+     });
+     observer.observe(targets[i]);
+    }
+    </script>
 </body>
 </html>
