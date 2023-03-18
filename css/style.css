@@ -625,13 +625,6 @@ h6{
 .staff-detail{
   padding: 2px 0;
 }
-.pop-inner-img{
-  gap: 24px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
 .link-text{
   color: rgb(44, 115, 214);
   font-weight: bold;
