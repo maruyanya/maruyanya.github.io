@@ -326,7 +326,18 @@ img {
 
   .wanttodo-column-text{
     line-height: 1.8;
+    max-width: 900px;
+    margin-top: 24px;
   }
+  .wanttodo-column-text span{
+    padding: 16px 0;
+  }
+  .wanttodo-column-img{
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+  }
+ 
 
   /* 幅が1300px以下 */
   @media (max-width:1300px){
