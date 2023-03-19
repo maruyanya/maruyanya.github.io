@@ -201,7 +201,7 @@ img {
       top: 400px;
     }
     .main-container{
-      padding: 0 24px;
+      padding: 0 24px 16px 24px;
     }
     .hero-img{
       margin-top: -40vh;
@@ -322,6 +322,18 @@ img {
     padding: 8px;
   }
 
+  .wanttodo-column-text{
+    line-height: 1.8;
+  }
+
+  /* 幅が1300px以下 */
+  @media (max-width:1300px){
+    .wanttodo-column-text{
+      margin-top: 72px;
+      padding: 0;
+    }
+  }
+  
   /* 幅が477px以下 */
   @media (max-width:477px){
     .posts-container{
@@ -391,7 +403,7 @@ h6{
 
 .about-column-img{
   width: 410px;
-  height: auto;
+  height: 350px;
 }
 
 /******** about-画像切り替え ***********/
@@ -473,7 +485,9 @@ h6{
     margin: auto;
   }
   .about-column-img{
-    width: 90%;
+    width: 328px;
+    height: 280px;
+    margin: auto;
   }
   .btn{
     right: 8xw;
