@@ -165,14 +165,6 @@ img {
     margin-right: 4vw;
   }
 
-  .hero-title{
-    position: absolute;
-    width: 36vw;
-    height: auto;
-    top: 39vh;
-    left: 2vw;
-  }
-
   .main-container{
     background-color: #fff;
     padding: 0 40px;
@@ -191,7 +183,7 @@ img {
     font-weight: 700;
     padding-left: 40px;
   }
-  
+
   /* 幅が949px以下 */
   @media (max-width:949px){
     main{
@@ -208,12 +200,6 @@ img {
       width: 64vw;
       height: auto;
     }
-    .hero-title{
-      width: 57vw;
-      height: auto;
-      top: 4vh;
-      left: 3vw;
-    }
   }
 
   /* 幅が700px以下 */
@@ -222,13 +208,6 @@ img {
       margin-top: -32vh;
       width: 72vw;
       height: auto;
-      padding-bottom: 80px;
-    }
-    .hero-title{
-      width: 80vw;
-      height: auto;
-      top: 4vh;
-      left: 16vw;
     }
   }
 
