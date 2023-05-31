@@ -63,7 +63,6 @@ img {
   position: fixed;
   width: 100%;
   height: 800px;
-  background: var(--yellow);
 }
 
 .header-container{
@@ -71,12 +70,12 @@ img {
   width: 265px;
   height: 729px;
   left: 28px;
-  top: 24px;
+  top: 16px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 900;
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 20px;
+  line-height: 30px;
   letter-spacing: 0.05em;
 }
 
@@ -89,11 +88,16 @@ img {
   left: 2vw;
   }
 
+  .header-title{
+    font-size: 38px;
+  }
+
 /***********　navigation　**************/
 .btn{
   position: fixed;
   right: 8px;
   top: 2.5vh;
+  z-index: 110;
 }
 
 .open .btn{
@@ -153,16 +157,11 @@ img {
     height: auto;
   }
 
-  .hero-img{
-    position: relative;
-    width: auto;
-    height: clamp(250px, 50vw, 500px);
-    margin: 80px 40px 40px 40px;
-  }
-
-  .main-img-area{
-    text-align: right;
-    margin-right: 4vw;
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
   }
 
   .main-container{
@@ -171,10 +170,10 @@ img {
   }
 
   .hero-text{
-  font-size: clamp(13px,2vw,24px);
+  font-size: clamp(13px,2vw,18px);
   font-weight: 500;
   text-align: right;
-  margin: 24px 0 80px 0;
+  margin: 8px 0 80px 0;
   }
 
   .hero-text span{
@@ -190,7 +189,7 @@ img {
       width: 100%;
       height: auto;
       margin: auto;
-      top: 400px;
+      top: 90px;
     }
     .main-container{
       padding: 0 24px 16px 24px;
@@ -198,15 +197,6 @@ img {
     .hero-img{
       margin-top: -40vh;
       width: 64vw;
-      height: auto;
-    }
-  }
-
-  /* 幅が700px以下 */
-  @media (max-width:700px){
-    .hero-img{
-      margin-top: -32vh;
-      width: 72vw;
       height: auto;
     }
   }
@@ -240,6 +230,7 @@ img {
   .plof img{
     border-radius: 5px;
     animation: var(--fadeup);
+    height: max-content;
   }
 
   .btn-category{
@@ -538,6 +529,9 @@ h6{
 #popup-on-8{
   display: none;
 }
+#popup-on-9{
+  display: none;
+}
 
 /* チェックされたらポップアップウインドウを開く */
 #popup-on-1:checked + .popup{
@@ -562,6 +556,9 @@ h6{
   display: block;
 }
 #popup-on-8:checked + .popup{
+  display: block;
+}
+#popup-on-9:checked + .popup{
   display: block;
 }
 
