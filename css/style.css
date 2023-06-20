@@ -535,30 +535,39 @@ h6{
 /* チェックされたらポップアップウインドウを開く */
 #popup-on-1:checked + .popup{
   display: block;
+  z-index: 120;
 }
 #popup-on-2:checked + .popup{
   display: block;
+  z-index: 120;
 }
 #popup-on-3:checked + .popup{
   display: block;
+  z-index: 120;
 }
 #popup-on-4:checked + .popup{
   display: block;
+  z-index: 120;
 }
 #popup-on-5:checked + .popup{
   display: block;
+  z-index: 120;
 }
 #popup-on-6:checked + .popup{
   display: block;
+  z-index: 120;
 }
 #popup-on-7:checked + .popup{
   display: block;
+  z-index: 120;
 }
 #popup-on-8:checked + .popup{
   display: block;
+  z-index: 120;
 }
 #popup-on-9:checked + .popup{
   display: block;
+  z-index: 120;
 }
 
 /* 閉じるアイコン（右上） */
