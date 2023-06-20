@@ -230,7 +230,6 @@ img {
   .plof img{
     border-radius: 5px;
     animation: var(--fadeup);
-    height: max-content;
   }
 
   .btn-category{
