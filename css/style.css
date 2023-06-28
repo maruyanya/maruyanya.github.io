@@ -531,6 +531,9 @@ h6{
 #popup-on-9{
   display: none;
 }
+#popup-on-10{
+  display: none;
+}
 
 /* チェックされたらポップアップウインドウを開く */
 #popup-on-1:checked + .popup{
@@ -566,6 +569,10 @@ h6{
   z-index: 120;
 }
 #popup-on-9:checked + .popup{
+  display: block;
+  z-index: 120;
+}
+#popup-on-10:checked + .popup{
   display: block;
   z-index: 120;
 }
